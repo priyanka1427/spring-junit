@@ -17,7 +17,7 @@ public class GreetingsImplTest {
 	@Test(expected = IllegalArgumentException.class)
 	public void greetShouldReturnAnExceptionWhen_NameIsNull() {
 		Greetings greeting = new GreetingsImpl();
-		greeting.greet(null);
+		greeting.greet("fail test");
 	}
 
 }
